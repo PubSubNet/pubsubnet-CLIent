@@ -1,0 +1,31 @@
+{
+  "hubs": {
+    "localhost:3000": {
+      "root": "/",
+      "enabled": true,
+      "favourite": true,
+      "negotiate": {
+        "usable": true,
+        "insecure": { "client": true, "declared": true, "client_force": false },
+        "http": { "client": "1.1", "declared": "1.1", "client_force": false },
+        "version": { "protocol": "v1", "impl": "v0.1", "wants_client": "v0.1", "hub_force": false, "client_force": false },
+        "allowed_verbs": ["get", "post", "options", "head"],
+        "same_origin_referral": true
+      },
+      "names": {
+        "pretty": "Localhost Port 3000",
+        "nick_user": "3000",
+        "nick_declared": "A PSN Hub"
+      },
+      "groups": [],
+      "quota_kb": 64,
+      "known_feeds": [ "#cats", "#tech", "@1" ],
+      "paths": {
+        "publish": "/publish",
+        "subscribe": "/subscribe",
+        "manifest": "/manifest",
+        "intro": "/hello"
+      },
+    }
+  }
+}
